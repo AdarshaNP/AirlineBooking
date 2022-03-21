@@ -2,10 +2,10 @@ package com.AirlinTravel.AirlineProject.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.AirlinTravel.AirlineProject.model.PassengerDetails2DB;
+import com.AirlinTravel.AirlineProject.model.PassengerDetailsInfo;
 
-public interface PassengerDetails2DBRepository extends JpaRepository<PassengerDetails2DB, Integer>{
-	PassengerDetails2DB[] findByPnr(long pnr);
-    PassengerDetails2DB[] findByEmail(String email);
+public interface PassengerDetails2DBRepository extends JpaRepository<PassengerDetailsInfo, Integer>{
+	PassengerDetailsInfo[] findByPnr(long pnr);
+    PassengerDetailsInfo[] findByEmail(String email);
 
 }

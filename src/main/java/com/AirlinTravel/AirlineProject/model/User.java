@@ -5,7 +5,7 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 
 @Entity
-public class UserEntity {
+public class User {
 	@Id
 	private String name;
 	@Column(nullable = false)
@@ -22,10 +22,10 @@ public class UserEntity {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	public UserEntity() {} 
+	public User() {} 
 	
 	
-	public UserEntity(String name, String email, long phonenumber, String password) {
+	public User(String name, String email, long phonenumber, String password) {
 		
 		this.name = name;
 		this.email = email;

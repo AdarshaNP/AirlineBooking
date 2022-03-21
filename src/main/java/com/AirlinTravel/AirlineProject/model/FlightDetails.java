@@ -1,7 +1,5 @@
 package com.AirlinTravel.AirlineProject.model;
 
-
-
 import java.time.LocalDateTime;
 
 import javax.persistence.Column;
@@ -29,8 +27,9 @@ public class FlightDetails {
 	@Column(nullable = false)
 	private int nonbusinessClassSeatsCount;
 //	public enum scheduledDays{Daily,WeekDays,WeekEnds,Mon,tue,Wed,thur,fri,sat,sunday};
-	
-	public FlightDetails() {}
+
+	public FlightDetails() {
+	}
 
 	public FlightDetails(String flightNumber, int airlineId, String fromPlace, String toPlace,
 			LocalDateTime startDateTime, LocalDateTime endDateTime, String instrumentUsed, int businessClassSeatsCount,
@@ -126,8 +125,5 @@ public class FlightDetails {
 				+ ", instrumentUsed=" + instrumentUsed + ", businessClassSeatsCount=" + businessClassSeatsCount
 				+ ", nonbusinessClassSeatsCount=" + nonbusinessClassSeatsCount + "]";
 	}
-	
-	
-	
 
 }

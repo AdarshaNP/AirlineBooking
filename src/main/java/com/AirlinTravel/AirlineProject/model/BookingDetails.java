@@ -7,29 +7,29 @@ public class BookingDetails {
 	private String emailid;
 	private int seats;
 	private int seatnumbers[];
-	private PassengerDetails passengerdetails[];
-	private String flightid;
+	// private PassengerDetails passengerdetails[];
+	private int flightid;
 
 	public BookingDetails() {
 
 		// TODO Auto-generated constructor stub
 	}
 
-	public BookingDetails(String name, String emailid, int seats, int seatnumbers[],
-			PassengerDetails passengerdetails[]) {
+	public BookingDetails(String name, String emailid, int seats, int seatnumbers[], int flightid) {
 
+		this.flightid = flightid;
 		this.name = name;
 		this.emailid = emailid;
 		this.seats = seats;
 		this.seatnumbers = seatnumbers;
-		this.passengerdetails = passengerdetails;
+		// this.passengerdetails = passengerdetails;
 	}
 
-	public String getFlightid() {
+	public int getFlightid() {
 		return flightid;
 	}
 
-	public void setFlightid(String flightid) {
+	public void setFlightid(int flightid) {
 		this.flightid = flightid;
 	}
 
@@ -65,20 +65,20 @@ public class BookingDetails {
 		this.seatnumbers = seatnumbers;
 	}
 
-	public PassengerDetails[] getPassengerdetails() {
-		return passengerdetails;
-	}
+	// public PassengerDetails[] getPassengerdetails() {
+	// return passengerdetails;
+	// }
 
-	public void setPassengerdetails(PassengerDetails[] passengerdetails) {
-		this.passengerdetails = passengerdetails;
-	}
+	/*
+	 * public void setPassengerdetails(PassengerDetails[] passengerdetails) {
+	 * this.passengerdetails = passengerdetails;
+	 */
+	// }
 
 	@Override
 	public String toString() {
 		return "BookingInfo [name=" + name + ", emailid=" + emailid + ", seats=" + seats + ", seatnumbers="
-				+ Arrays.toString(seatnumbers) + ", passengerdetails=" + Arrays.toString(passengerdetails)
-				+ ", flightid=" + flightid + "]";
+				+ Arrays.toString(seatnumbers) + ", flightid=" + flightid + "]";
 	}
 
-	
 }

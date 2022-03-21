@@ -2,9 +2,12 @@ package com.AirlinTravel.AirlineProject.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.AirlinTravel.AirlineProject.model.UserEntity;
+import com.AirlinTravel.AirlineProject.model.User;
 
-public interface UserRepository extends JpaRepository<UserEntity, String> {
+
+
+//Need to implement the save method.....
+public interface UserRepository extends JpaRepository<User, String> {
 
 	}
 
